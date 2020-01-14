@@ -67,6 +67,15 @@ for (let i in namesToCheck) {
     checkAge(namesToCheck[i].name, namesToCheck[i].age);
 }
 
+// checking length of 'Hello World!'
+let lengthHW = getLength("Hello World!");
+
+if (lengthHW % 2 === 0) {
+    console.log('The world is nice and even!');
+} else {
+    console.log('The world is an odd place!');
+}
+
 /*  FUNCTIONS
     ---------- */
 
@@ -87,4 +96,9 @@ function checkAge(name, age) {
     } else {
         console.log('Welcome ' + name + '!');
     }
+}
+
+// returns the length of a string.
+function getLength(string) {
+    return string.length;
 }
